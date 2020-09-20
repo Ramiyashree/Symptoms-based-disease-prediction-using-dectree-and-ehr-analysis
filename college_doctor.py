@@ -150,8 +150,7 @@ def DecisionTree():
         #return disease[a]
         #value =disease[a]
         #return render_template('index.html')
-        return render_template('decision_pred.html', Decision_text='The Disease Predicted by Decision Tree Classifier is and its accuracy is : {}'.format(disease[a]) +"\n"+ str(accuracy) +"%")
-        #return render_template('index.html', Decision_text='The predicted disease is  {}'.value)
+        return render_template('decision_pred.html', Decision_text='The Disease Predicted of Navie bayes for the symptoms selected and its accuracy is : {}'.format(disease[a]) +"\n"+ str(psymptoms)+" "+str(accuracy)+"%" )
     else:
         #t1.delete("1.0", END)
         #t1.insert(END, "Not Found")

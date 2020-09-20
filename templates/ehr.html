@@ -3,7 +3,7 @@
 <!--From https://codepen.io/frytyler/pen/EGdtg-->
 <head>
   <meta charset="UTF-8">
-  <title>ML API</title>
+  <title>ENGIDOCS</title>
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
@@ -50,10 +50,24 @@
 </head>
 <body>
 
+<div class="centered">
+      
+   <h2> Get your health record summary</h2>
+   <br>
+   <h4>Upload your health record</h4>
+   <h4>We generate the summary of it.</h4>
+
+    
+  </div>
+
 <div class="split left">
   <div class="centered">
      
     <img src="/static/logo.PNG" height="200" width="2000">
+    <br><br>
+    <form method="POST" action="/Decision_Prediction">
+<input type="submit" value="Want a Decision Prediction?">
+</form>
   </div>
 </div>
 
@@ -89,7 +103,7 @@ function showFileName( event ) {
 }
 </script>
 
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Generate the summary</button>
     </form>
 
    <br>

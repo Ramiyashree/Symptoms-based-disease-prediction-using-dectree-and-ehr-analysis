@@ -3,7 +3,7 @@
 <!--From https://codepen.io/frytyler/pen/EGdtg-->
 <head>
   <meta charset="UTF-8">
-  <title>ML API</title>
+  <title>ENGIDOCS</title>
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
@@ -50,10 +50,24 @@
 </head>
 <body>
 
+<div class="centered">
+      
+   <h1> Get your decision predicted</h1>
+   <br>
+   <h4>Give symptoms here</h4>
+   <h4>Get the illness you most likely would have.</h4>
+
+    
+  </div>
+
 <div class="split left">
   <div class="centered">
      
     <img src="/static/logo.PNG" height="200" width="2000">
+    <br><br>
+<form method="POST" action="/ehr_sum">
+<input type="submit" value="Want a EHR Summary?">
+</form>
   </div>
 </div>
 
@@ -66,7 +80,7 @@
 
     <label for="Symptom1">Symptom1 </label>
 
-<select id="Symptom1" required>
+<select id="Symptom1" name = "Symptom1" required>
   <option value="Select">Select</option>
   <option value="back_pain">back_pain</option>
   <option value="constipation">constipation</option>
@@ -500,7 +514,7 @@
   <option value="yellow_crust_ooze">yellow_crust_ooze</option>
 </select>
 <br><br>
-    <input type="submit" class="btn btn-success" value="Decision Tree Prediction">
+    <input type="submit" class="btn btn-success" value="Predict your disease">
      <br><br>
 	<br>
    <br>
